@@ -1,8 +1,8 @@
 # Turkish Draughts Game
 ## Photos for Example
-###  Start Screen (wiht menu open)
+###  Start Screen (with menu open)
 ![normal-screen-with-menu](/normal-screen-with-menu.png)
-###  Start Screen (wiht menu closed)
+###  Start Screen (with menu closed)
 ![normal-screen-without-menu](/normal-screen-without-menu.png)
 ### Winner Screen
 ![winner-screen](/winner-screen.png)
