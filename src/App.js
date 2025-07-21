@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { Box, Flex , Text } from '@chakra-ui/react'
+import GameBoard from './components/gameBoard'
+import Info from './components/information'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <Flex flexDirection="column">
+        <Box bg="#dae1e3" textAlign="center" p="6px" borderBottom="4px" borderColor="#bcc8cc"  >
+        <Text color="black" fontFamily="monospace" fontSize="30px" >Turkish Draughts </Text>
+        </Box>
+  
+    <Flex w="full" h="full" flexDirection="row"  bg="#242a2b"  pb="100px">
+      <Box width={["70%" , "78%"]} justifyItems="center" textAlign="center" >
+      <Flex flexDirection="column" pt="70px" ml="200px"  >
+     
+        <Box >
+        <GameBoard />
+        </Box>
+        </Flex>
+        </Box>
+        <Box width={["30%" , "22%"]}>
+          <Info/>
+        </Box>
+   
+        </Flex>
+          </Flex>
+          </>
+  )
 }
 
-export default App;
+export default App
+
